@@ -9,22 +9,22 @@ export default function App() {
         <Shader className="w-full h-full">
           <Swirl colorA="#0a0a18" colorB="#12102a" detail={1.7} />
           <ChromaFlow
-            baseColor="#ffffff"
-            downColor="#ff5f03"
-            leftColor="#ff5f03"
-            rightColor="#ff5f03"
-            upColor="#ff5f03"
-            momentum={isTouching ? 20 : 13}
-            radius={isTouching ? 5 : 3.5}
+            baseColor="#080810"
+            downColor="#7B2FBE"
+            leftColor="#9B30FF"
+            rightColor="#1a1040"
+            upColor="#2a1060"
+            momentum={13}
+            radius={3.5}
           />
           <FlutedGlass
             aberration={0.61}
             angle={31}
             frequency={8}
-            highlight={isTouching ? 0.25 : 0.12}
+            highlight={0.12}
             highlightSoftness={0}
             lightAngle={-90}
-            refraction={isTouching ? 6 : 4}
+            refraction={4}
             shape="rounded"
             softness={1}
             speed={0.15}
