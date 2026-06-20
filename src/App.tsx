@@ -3,17 +3,17 @@ import { Shader, Swirl, ChromaFlow, FlutedGlass } from 'shaders/react';
 // Hero section with shader background only - Full screen 1080x1920
 export default function App() {
   return (
-    <section className="relative w-full h-screen bg-[#080810] overflow-hidden">
+    <section className="relative w-full h-screen bg-[#EFEFEF] overflow-hidden">
       {/* Shader background - full screen coverage */}
       <div className="absolute inset-0 z-10 pointer-events-none w-full h-full">
         <Shader className="w-full h-full">
-          <Swirl colorA="#0a0a18" colorB="#12102a" detail={1.7} />
+          <Swirl colorA="#ffffff" colorB="#f0f0f0" detail={1.7} />
           <ChromaFlow
-            baseColor="#080810"
-            downColor="#7B2FBE"
-            leftColor="#9B30FF"
-            rightColor="#1a1040"
-            upColor="#2a1060"
+            baseColor="#ffffff"
+            downColor="#ff5f03"
+            leftColor="#ff5f03"
+            rightColor="#ff5f03"
+            upColor="#ff5f03"
             momentum={13}
             radius={3.5}
           />
